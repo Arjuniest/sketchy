@@ -11,3 +11,8 @@ function addGrids(){
 for (let i = 1; i <= 16*16; i++) {
     addGrids();
 }
+
+const color = Array.from(document.querySelectorAll('.grid'));
+// console.log(typeof(color))
+
+color.forEach(color => color.addEventListener('mouseover', (changeColor => color.classList.add('black')), false));
