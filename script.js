@@ -13,15 +13,15 @@ function addGrids(){
         container.appendChild(grid);
         console.log("adding grids");  
     }
+    //changing color :
+    const color = Array.from(document.querySelectorAll('.grid'));
+    // console.log(typeof(color))
+
+    color.forEach(color => color.addEventListener('mouseover', (changeColor => color.classList.add('black')), false));
 }
 
 addGrids();
 
-//changing color :
-const color = Array.from(document.querySelectorAll('.grid'));
-// console.log(typeof(color))
-
-color.forEach(color => color.addEventListener('mouseover', (changeColor => color.classList.add('black')), false));
 
 
 
